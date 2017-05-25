@@ -1,0 +1,24 @@
+server:
+  rootPath: /*
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8089
+
+oho:
+  driverClass: com.mysql.jdbc.Driver
+  user: ohoit
+  password: StoreNMove14#
+  url: jdbc:mysql://52.66.72.197:3306/
+
+
+logging:
+  level: INFO
+  loggers:
+    org.hibernate.SQL:
+      level: TRACE
+
+swaggerBasePath: /
